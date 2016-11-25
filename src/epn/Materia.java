@@ -1,30 +1,35 @@
-package epn.com;
-
-import java.util.Arrays;
+package epn;
 
 public class Materia {
-	String nombreMateria;
-	String [] profesor;
-	String [] alumno;
-
-	public Materia(String nombreMateria) {
+	String nombMateria;
+	String profesores[];
+	String estudiantes[];
+	
+	public Materia(String nombMateria, String[] profesores, String[] estudiantes) {
 		super();
-		this.nombreMateria = nombreMateria;
+		this.nombMateria = nombMateria;
+		this.profesores = profesores;
+		this.estudiantes = estudiantes;
 	}
-
-	public String getNombreMateria() {
-		return nombreMateria;
+	
+	
+	public String getNombMateria() {
+		return nombMateria;
 	}
-
-	public void setNombreMateria(String nombreMateria) {
-		this.nombreMateria = nombreMateria;
+	public void setNombMateria(String nombMateria) {
+		this.nombMateria = nombMateria;
 	}
-
-	@Override
-	public String toString() {
-		return "Materia [nombreMateria=" + nombreMateria + ", profesor=" + Arrays.toString(profesor) + ", alumno="
-				+ Arrays.toString(alumno) + "]";
+	public String[] getProfesores() {
+		return profesores;
 	}
-		
-
+	public void setProfesores(String[] profesores) {
+		this.profesores = profesores;
+	}
+	public String[] getEstudiantes() {
+		return estudiantes;
+	}
+	public void setEstudiantes(String[] estudiantes) {
+		this.estudiantes = estudiantes;
+	}
+	
 }
