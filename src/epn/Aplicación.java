@@ -16,8 +16,9 @@ public class Aplicación {
 		listaAlumnos[0]= new Alumno("Carlos",Materias,Profesores);
 		
 		
-		//Pprofesotres del Alumno 1(Posicion 0)
-		System.out.println(Arrays.toString(listaAlumnos[0].listProfesores()));
+		//Materias del Alumno 1(Posicion 0)
+		System.out.println(Arrays.toString(listaAlumnos[0].listMaterias()));
+		
 		
 		
 		
